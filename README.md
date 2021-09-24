@@ -11,7 +11,7 @@ Team Project Name : SCV(Smart Control in Vehicle)
 
 Repository Name : TheWorldEmbededSoftwareContest-webOS-MOAS-SCV
 
-Repository Link : https://github.com/MOAS2021/TheWorldEmbededSoftwareContest-webOS-MOAS-SCV
+Repository Link : https://github.com/MOAS2021/2021ESWContest_webOS_3015
       
 
 <개발자 - developer>
