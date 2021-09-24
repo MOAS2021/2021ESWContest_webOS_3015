@@ -1,4 +1,3 @@
-# TheWorldEmbededSoftwareContest-webOS-MOAS-SCV
 ![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=300&section=header&text=임베디드SW경진대회&fontSize=90)
 
 
