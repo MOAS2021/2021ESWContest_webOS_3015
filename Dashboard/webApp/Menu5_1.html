@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://www.gstatic.com/firebasejs/7.2/firebase.js"></script>
+</head>
+<head>
+    <link rel="stylesheet"
+    href="Menu5.css">
+    <title>스마트팜</title>
+    <style>
+        #a{
+          background-color: #808EDD;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+        #b{
+          background-color: #808EDD;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+        #c{
+          background-color: #808EDD;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+        #d{
+          background-color: #808EDD;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+        #e{
+          background-color: #808EDD;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+        #f{
+          background-color: #808EDD;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+
+        #empty{
+          width: 900px;
+          height: 480px;
+          background-color: white;
+        }
+        #s{
+          background-color: rgb(238, 113, 113);
+          margin-top: 500px;
+          margin: 100px;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container1">
+        <header>
+            <h1>Dongyang Mirae University</h1>
+            <ul>
+              <li><a href="Home.html">홈으로</a></li>
+              <li><a href="MainActivity.html">뒤로가기</a></li>
+            </ul>
+        </header>
+      </div>
+
+        <notification>
+          <a id="s" href="Menu4.html"> 움직임 감지 </a>
+        <notification>
+
+        <state>
+          <h1>MoASFarm</h1>
+        </state>
+
+
+      <div class="container2">
+        <board>
+        <iframe id="main_frame" width="700" height="480" src="demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</board>
+        <part2>
+          <section1>
+            <a id="a">LED</a>
+          </section1>
+          <section2>
+            <a id="b">팬작동</a>
+          </section2>
+          <section3>
+            <a id="c">워터펌프</a>
+          </section3>
+        </part2>
+        <part3>
+          <section4>
+            <a id="d">온도</a>
+          </section4>
+          <section5>
+            <a id="e">습도</a>
+          </section5>
+          <section6>
+            <a id="f">토양수분</a>
+          </section6>
+        </part3>
+
+        <footer>
+            Cover template for <a href="https://www.dongyang.ac.kr">Dongyang Mirae University</a>
+            , by <a href="https://blog.naver.com/moas4408"> @MoAS.</a>
+
+        </footer>
+      </div>
+      <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyAF1-GgY0BJNbAXi7vITl9VtoA5jmavTT0",
+          authDomain: "nodemcutest-756bb.firebaseapp.com",
+          databaseURL: "https://nodemcutest-756bb-default-rtdb.firebaseio.com",
+          projectId: "nodemcutest-756bb",
+          storageBucket: "nodemcutest-756bb.appspot.com",
+          messagingSenderId: "266885432481",
+          appId: "1:266885432481:web:66e184bb460a1470065ce0",
+          measurementId: "G-N48NQEYLJ4"
+          
+          };
+         firebase.initializeApp(firebaseConfig);
+
+          
+          // var demo = document.getElementById("USER");
+          var dbRef = firebase.database().ref().child("Smartfarm/ip");
+          var WHO;
+          dbRef.on('value',snap => {
+             WHO=snap.val();           
+             document.getElementById("main_frame").src = WHO;
+                });
+          
+          
+       
+      </script>
+
+  </body>
+
+  </html>

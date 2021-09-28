@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://www.gstatic.com/firebasejs/7.2/firebase.js"></script>
+    </head>
+<head>
+    <link rel="stylesheet"
+    href="loading.css">
+    <title>로딩창</title>
+      <style>
+        h2 {
+            font-family: "MD아롱체",sans-serif;
+          font-weight: 800;
+          font-size:200px
+        }
+      </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dongyang Mirae University</h1>
+        </header>
+        <section>
+            <h2><a id="USER" href="MainActivity.html">Loading...</a></h2>
+        </section>
+        <footer>
+            Cover template for <a href="https://www.dongyang.ac.kr">Dongyang Mirae University</a>
+            , by <a href="https://blog.naver.com/moas4408"> @MoAS.</a>
+        </footer>
+    </div>
+    <script>
+        const firebaseConfig = {
+  
+  apiKey: "AIzaSyAF1-GgY0BJNbAXi7vITl9VtoA5jmavTT0",
+  
+  authDomain: "nodemcutest-756bb.firebaseapp.com",
+  
+  databaseURL: "https://nodemcutest-756bb-default-rtdb.firebaseio.com",
+  
+  projectId: "nodemcutest-756bb",
+  
+  storageBucket: "nodemcutest-756bb.appspot.com",
+  
+  messagingSenderId: "266885432481",
+  
+  appId: "1:266885432481:web:66e184bb460a1470065ce0",
+  
+  measurementId: "G-N48NQEYLJ4"
+  
+  };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase에서 읽기
+        
+        // var demo = document.getElementById("USER");
+        var dbRef = firebase.database().ref().child("FaceCheck/Name");
+        
+        var WHO;
+        var NO = "NO";
+        dbRef.on('value',snap => {
+                WHO=snap.val();           
+                var demo = document.getElementById("USER");
+                if(WHO == NO){
+                    demo.innerHTML="얼굴인식중...";
+                }
+                    
+                else{
+                    demo.innerHTML="Hello!! "+WHO
+                    setTimeout(function(){location.href="MainActivity.html"}, 1500);
+                    var dbRefObject = firebase.database().ref();
+                    dbRefObject.child("FaceCheck/Power").set("OFF");
+                }
+                    
+                    
+            });
+        
+        var demoa = document.getElementById("d");
+        var dbRefa = firebase.database().ref().child("Airconditioner/TempHumi/t");
+        dbRefa.on('value',snap => demoa.innerHTML = "온도= " + snap.val() + "°C");
+     
+    </script>
+
+</body>
+
+</html>

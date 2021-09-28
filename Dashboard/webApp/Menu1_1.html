@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://www.gstatic.com/firebasejs/7.2/firebase.js"></script>
+</head>
+<head>
+    <link rel="stylesheet"
+    href="Menu1_1.css">
+    <title>에어컨2</title>
+    <style>
+        #a{
+          background-color: #F6A48B;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+        #b{
+          background-color: #F6A48B;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+        #c{
+          background-color: #F6A48B;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+        #d{
+          background-color: #F6A48B;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+        #s{
+          background-color: rgb(238, 113, 113);
+          margin: 100px;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <header>
+            <h1>Dongyang Mirae University</h1>
+            <ul>
+              <li><a href="Home.html">홈으로</a></li>
+              <li><a href="MainActivity.html">뒤로가기</a></li>
+            </ul>
+        </header>
+        </div>
+        <notification>
+          <a id="s" href="Menu4.html"> 움직임 감지 </a>
+        </notification>
+        
+        <div class="container2">
+
+        <board>
+          <img src="airconditioner2.png"/>
+        </board>
+
+        
+
+        <part1>
+          <section1>
+            <a id="a"> 에어컨</a>
+          </section1>
+          <section2>
+            <a id="b" type = "button" href="Menu1.html" onclick="myF()"> 에어컨 켜기 / 끄기</a>
+          </section2>
+          <section3>
+            <a id="c"> 현재 실내 온도</a>
+          </section3>
+          <section4>
+            <a id="d"> 현재 실내 습도</a>
+          </section4>
+      </part1>
+
+        <footer>
+            Cover template for <a href="https://www.dongyang.ac.kr">Dongyang Mirae University</a>
+            , by <a href="https://blog.naver.com/moas4408"> @MoAS.</a>
+        </footer>
+    </div>
+    <script>
+      const firebaseConfig = {
+
+apiKey: "AIzaSyAF1-GgY0BJNbAXi7vITl9VtoA5jmavTT0",
+
+authDomain: "nodemcutest-756bb.firebaseapp.com",
+
+databaseURL: "https://nodemcutest-756bb-default-rtdb.firebaseio.com",
+
+projectId: "nodemcutest-756bb",
+
+storageBucket: "nodemcutest-756bb.appspot.com",
+
+messagingSenderId: "266885432481",
+
+appId: "1:266885432481:web:66e184bb460a1470065ce0",
+
+measurementId: "G-N48NQEYLJ4"
+
+};
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      // firebase에서 읽기
+      var demo = document.getElementById("c");
+      var dbRef = firebase.database().ref().child("Airconditioner/TempHumi/h");
+      dbRef.on('value',snap => demo.innerHTML ="습도= " + snap.val() + "%");
+      var demoa = document.getElementById("d");
+      var dbRefa = firebase.database().ref().child("Airconditioner/TempHumi/t");
+      dbRefa.on('value',snap => demoa.innerHTML = "온도= " + snap.val() + "°C");
+      var df = firebase.database().ref().child("CCTV/human");
+      var WHO;
+      var NO = "no";
+      df.on('value',snap => {
+                WHO=snap.val();           
+                var demo = document.getElementById("s");
+                if(WHO == NO){
+                    demo.innerHTML="움직임감지없음";
+                }
+                    
+                else{
+                    demo.innerHTML="움직임감지";
+                }
+                    
+                    
+            });
+   
+  </script>
+  <script>
+    function myF() {
+        //firebase에 쓰기
+        var close = parseInt(0);
+        var dbRefObject = firebase.database().ref();
+        dbRefObject.child("Airconditioner/Control/PowerValue").set(close);
+    }
+</script>
+
+</body>
+
+</html>

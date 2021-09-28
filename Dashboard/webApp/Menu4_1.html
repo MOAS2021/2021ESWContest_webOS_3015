@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://www.gstatic.com/firebasejs/7.2/firebase.js"></script>
+</head>
+<head>
+    <link rel="stylesheet"
+    href="Menu4_1.css">
+    <title>Storage</title>
+    <style>
+        #a{
+          background-color: #8CD2F1;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+        #b{
+          background-color: #8CD2F1;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dongyang Mirae University</h1>
+            <ul>
+              <li><a href="Home.html">홈으로</a></li>
+              <li><a href="MainActivity.html">뒤로가기</a></li>
+            </ul>
+        </header>
+
+        <board>
+          <iframe id="main_frame" width="900" height="500" ></iframe>
+        </board>
+
+
+        <part4>
+          
+          <section2>
+            <a id="b">Detection Storage</a>
+          </section2>
+        </part4>
+
+
+
+        <footer>
+            Cover template for <a href="https://www.dongyang.ac.kr">Dongyang Mirae University</a>
+            , by <a href="https://blog.naver.com/moas4408"> @MoAS.</a>
+        </footer>
+    </div>
+    <script>
+      const firebaseConfig = {
+
+apiKey: "AIzaSyAF1-GgY0BJNbAXi7vITl9VtoA5jmavTT0",
+
+authDomain: "nodemcutest-756bb.firebaseapp.com",
+
+databaseURL: "https://nodemcutest-756bb-default-rtdb.firebaseio.com",
+
+projectId: "nodemcutest-756bb",
+
+storageBucket: "nodemcutest-756bb.appspot.com",
+
+messagingSenderId: "266885432481",
+
+appId: "1:266885432481:web:66e184bb460a1470065ce0",
+
+measurementId: "G-N48NQEYLJ4"
+
+};
+       // Initialize Firebase
+       firebase.initializeApp(firebaseConfig);
+        // firebase에서 읽기
+        
+        // var demo = document.getElementById("USER");
+        var dbRef = firebase.database().ref().child("CCTV/storage");
+        var WHO ;
+        var storageRef = firebase.storage().ref();
+        dbRef.on('value',snap => {
+                    WHO=snap.val();  
+                    
+                    storageRef.child(WHO).getDownloadURL().then(function(url){
+                        ImgUrl = url;
+                        
+                        firebase.database().ref('Pictures'+'/'+"dw").set({
+                            Name: WHO,
+                            Link: ImgUrl});
+                            firebase.database().ref('Pictures/'+"dw").on('value', function(snapshot){
+                                document.getElementById('main_frame').src = snapshot.val().Link;
+                        });
+                });
+            });
+       
+        
+        
+     
+    </script>
+
+</body>
+
+</html>

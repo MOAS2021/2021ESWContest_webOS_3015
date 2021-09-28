@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://www.gstatic.com/firebasejs/7.2/firebase.js"></script>
+</head>
+<head>
+    <link rel="stylesheet"
+    href="Menu3.css">
+    <title>냉장고</title>
+    <style>
+        #a{
+          background-color: #BFE196;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+
+        #c{
+          background-color: #BFE196;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+        #spaceroom{
+          width: 330px;
+          height: 480px;
+          border-radius: 20px;
+          
+          color: 	#013333;
+          margin-left: 50px;
+          background-color: white;
+          text-align: left;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+          
+ 
+        }
+        #empty {
+          width: 100px;
+          height: 480px;
+        }
+        #ref{
+          width: 330px;
+          height: 480px;
+          margin-right: 50px;
+        }
+        #s{
+          background-color: rgb(238, 113, 113);
+          margin: 100px;
+          font-family: "MD아롱체",sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container1">
+        <header>
+            <h1>Dongyang Mirae University</h1>
+            <ul>
+              <li><a href="Home.html">홈으로</a></li>
+              <li><a href="MainActivity.html">뒤로가기</a></li>
+            </ul>
+        </header>
+      </div>
+      <notification>
+        <a id="s" href="Menu4.html"> 움직임 감지 </a>
+      </notification>
+      
+      <div class="container2">
+
+        <table>
+          <tr>
+            <td id="ref"><img src="ref.png"/></td>
+            <td id="empty"></td>
+            <td id="spaceroom">안뇽</td>
+          </tr>
+        </table>
+
+
+
+        <part2>
+          <section1>
+            <a id="a">냉장고</a>
+          </section1>
+
+          <section3>
+            <a id="c" href="https://www.coupang.com/?src=1042016&spec=10304903&addtag=900&ctag=HOME&lptag=%EC%BF%A0%ED%8C%A1&itime=20210918155029&pageType=HOME&pageValue=HOME&wPcid=21111427259203630969597&wRef=www.google.com&wTime=20210918155029&redirect=landing&gclid=CjwKCAjw-ZCKBhBkEiwAM4qfF-HGmTb3sNOadg_rth2PfI9WJhp6cGdEGFbK4wXkXQ2p4cOZgDRiWxoCnAMQAvD_BwE">주문하기</a>
+          </section3>
+        </part2>
+
+
+        <footer>
+            Cover template for <a href="https://www.dongyang.ac.kr">Dongyang Mirae University</a>
+            , by <a href="https://blog.naver.com/moas4408"> @MoAS.</a>
+        </footer>
+    </div>
+    <script>
+      const firebaseConfig = {
+
+apiKey: "AIzaSyAF1-GgY0BJNbAXi7vITl9VtoA5jmavTT0",
+
+authDomain: "nodemcutest-756bb.firebaseapp.com",
+
+databaseURL: "https://nodemcutest-756bb-default-rtdb.firebaseio.com",
+
+projectId: "nodemcutest-756bb",
+
+storageBucket: "nodemcutest-756bb.appspot.com",
+
+messagingSenderId: "266885432481",
+
+appId: "1:266885432481:web:66e184bb460a1470065ce0",
+
+measurementId: "G-N48NQEYLJ4"
+
+};
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      var df = firebase.database().ref().child("CCTV/human");
+      var WHO;
+      var NO = "no";
+      df.on('value',snap => {
+                WHO=snap.val();           
+                var demo = document.getElementById("s");
+                if(WHO == NO){
+                    demo.innerHTML="움직임감지없음";
+                }
+                    
+                else{
+                    demo.innerHTML="움직임감지";
+                }
+                    
+                    
+            });
+      // firebase에서 읽기
+      //var pro0N, pro0EA, pro0LC, pro1N, pro1EA, pro1LC,pro2N, pro2EA, pro2LC,pro3N, pro3EA, pro3LC,pro4N, pro4EA, pro4LC, pro5N, pro5EA, pro5LC ; 
+      var demo = document.getElementById("spaceroom");
+      var product0N = firebase.database().ref().child("Refrigerator/PRODUCT0/name");
+      var product0EA = firebase.database().ref().child("Refrigerator/PRODUCT0/num");
+      var product0LC = firebase.database().ref().child("Refrigerator/PRODUCT0/date");
+      product0N.on('value',snap => {
+        let pro0N = '\u00A0'+'\u00A0'+ "제품명 : " + snap.val() + "\n";
+        demo.innerText = pro0N; 
+      });
+      product0EA.on('value',snap => {
+        let pro0EA ='\u00A0'+'\u00A0'+ "갯수 : " + snap.val();
+        const content0EA =document.createTextNode(pro0EA);
+        
+        demo.appendChild(content0EA); 
+      });
+      product0LC.on('value',snap => {
+        let pro0LC ='\u00A0'+'\u00A0'+"유통기한 : " + snap.val();
+        const content0LC =document.createTextNode(pro0LC);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content0LC); 
+      });   
+                                 
+
+      var product1N = firebase.database().ref().child("Refrigerator/PRODUCT1/name");
+      var product1EA = firebase.database().ref().child("Refrigerator/PRODUCT1/num");
+      var product1LC = firebase.database().ref().child("Refrigerator/PRODUCT1/date");
+      product1N.on('value',snap => {
+        let pro1N ='\u00A0'+'\u00A0'+"제품명 : " + snap.val();
+        const content1N =document.createTextNode(pro1N);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content1N); 
+      });
+      product1EA.on('value',snap => {
+        let pro1EA ='\u00A0'+'\u00A0'+"갯수 : " + snap.val();
+        const content1EA =document.createTextNode(pro1EA);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content1EA); 
+      });
+      product1LC.on('value',snap => {
+        let pro1LC ='\u00A0'+'\u00A0'+"유통기한 : " + snap.val();
+        const content1LC =document.createTextNode(pro1LC);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content1LC); 
+      });
+                                       
+
+      var product2N = firebase.database().ref().child("Refrigerator/PRODUCT2/name");
+      var product2EA = firebase.database().ref().child("Refrigerator/PRODUCT2/num");
+      var product2LC = firebase.database().ref().child("Refrigerator/PRODUCT2/date");
+      product2N.on('value',snap => {
+        let pro2N ='\u00A0'+'\u00A0'+"제품명 : " + snap.val();
+        const content2N =document.createTextNode(pro2N);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content2N); 
+      });
+      product2EA.on('value',snap => {
+        let pro2EA ='\u00A0'+'\u00A0'+"갯수 : " + snap.val();
+        const content2EA =document.createTextNode(pro2EA);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content2EA); 
+      });
+      product2LC.on('value',snap => {
+        let pro2LC ='\u00A0'+'\u00A0'+"유통기한 : " + snap.val();
+        const content2LC =document.createTextNode(pro2LC);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content2LC); 
+      }); 
+                                       
+
+      var product3N = firebase.database().ref().child("Refrigerator/PRODUCT3/name");
+      var product3EA = firebase.database().ref().child("Refrigerator/PRODUCT3/num");
+      var product3LC = firebase.database().ref().child("Refrigerator/PRODUCT3/date");
+      product3N.on('value',snap => {
+        let pro3N ='\u00A0'+'\u00A0'+"제품명 : " + snap.val();
+        const content3N =document.createTextNode(pro3N);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content3N); 
+      });
+      product3EA.on('value',snap => {
+        let pro3EA ='\u00A0'+'\u00A0'+"갯수 : " + snap.val();
+        const content3EA =document.createTextNode(pro3EA);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content3EA); 
+      });
+      product3LC.on('value',snap => {
+        let pro3LC ='\u00A0'+'\u00A0'+"유통기한 : " + snap.val();
+        const content3LC =document.createTextNode(pro3LC);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content3LC); 
+      }); 
+                                       
+
+      var product4N = firebase.database().ref().child("Refrigerator/PRODUCT4/name");
+      var product4EA = firebase.database().ref().child("Refrigerator/PRODUCT4/num");
+      var product4LC = firebase.database().ref().child("Refrigerator/PRODUCT4/date");
+      product4N.on('value',snap => {
+        let pro4N ='\u00A0'+'\u00A0'+"제품명 : " + snap.val();
+        const content4N =document.createTextNode(pro4N);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content4N); 
+      });
+      product4EA.on('value',snap => {
+        let pro4EA ='\u00A0'+'\u00A0'+"갯수 : " + snap.val();
+        const content4EA =document.createTextNode(pro4EA);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content4EA); 
+      });
+      product4LC.on('value',snap => {
+        let pro4LC ='\u00A0'+'\u00A0'+"유통기한 : " + snap.val();
+        const content4LC =document.createTextNode(pro4LC);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content4LC); 
+      });  
+                                       
+
+      var product5N = firebase.database().ref().child("Refrigerator/PRODUCT5/name");
+      var product5EA = firebase.database().ref().child("Refrigerator/PRODUCT5/num");
+      var product5LC = firebase.database().ref().child("Refrigerator/PRODUCT5/date");
+      product5N.on('value',snap => {
+        let pro5N ='\u00A0'+'\u00A0'+"제품명 : " + snap.val();
+        const content5N =document.createTextNode(pro5N);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content5N); 
+      });
+      product5EA.on('value',snap => {
+        let pro5EA ='\u00A0'+'\u00A0'+"갯수 : " + snap.val();
+        const content5EA =document.createTextNode(pro5EA);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content5EA); 
+      });
+      product5LC.on('value',snap => {
+        let pro5LC ='\u00A0'+'\u00A0'+"유통기한 : " + snap.val();
+        const content5LC =document.createTextNode(pro5LC);
+        var br = document.createElement("br");
+        demo.appendChild(br);
+        demo.appendChild(content5LC); 
+      });                    
+      
+            
+      
+      
+   
+  </script>
+
+</body>
+
+</html>

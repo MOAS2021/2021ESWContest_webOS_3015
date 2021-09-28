@@ -1,0 +1,13 @@
+{
+    "id": "com.home.app",
+    "version": "1.0.0",
+    "vendor": "DMU",
+    "type": "web",
+    "main": "Home.html",
+    "title": "EX1",
+    "icon": "icon.png",
+    "requiredPermissions": [
+      "time.query",
+      "activity.operation"
+    ]
+  }

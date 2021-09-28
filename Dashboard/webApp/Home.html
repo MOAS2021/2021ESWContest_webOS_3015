@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://www.gstatic.com/firebasejs/7.2/firebase.js"></script>
+    </head>
+<head>
+    <link rel="stylesheet"
+    href="Home.css">
+    <title>홈화면</title>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dongyang Mirae University</h1>
+            
+        </header>
+        <section>
+            <p>MoAS</p>
+            <p> Mobile of Automation System</p>
+            <a type="button" href="loading.html" onclick="myF()"> Start</a>
+        </section>
+        <footer>
+            Cover template for <a href="https://www.dongyang.ac.kr">Dongyang Mirae University</a>
+            , by <a href="https://blog.naver.com/moas4408"> @MoAS.</a>
+        </footer>
+    </div>
+    <script>
+        const firebaseConfig = {
+  
+  apiKey: "AIzaSyAF1-GgY0BJNbAXi7vITl9VtoA5jmavTT0",
+  
+  authDomain: "nodemcutest-756bb.firebaseapp.com",
+  
+  databaseURL: "https://nodemcutest-756bb-default-rtdb.firebaseio.com",
+  
+  projectId: "nodemcutest-756bb",
+  
+  storageBucket: "nodemcutest-756bb.appspot.com",
+  
+  messagingSenderId: "266885432481",
+  
+  appId: "1:266885432481:web:66e184bb460a1470065ce0",
+  
+  measurementId: "G-N48NQEYLJ4"
+  
+  };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase에서 읽기
+        var demo = document.getElementById("c");
+        var dbRef = firebase.database().ref().child("Airconditioner/TempHumi/h");
+        dbRef.on('value',snap => demo.innerHTML ="습도= " + snap.val() + "%");
+        var demoa = document.getElementById("d");
+        var dbRefa = firebase.database().ref().child("Airconditioner/TempHumi/t");
+        dbRefa.on('value',snap => demoa.innerHTML = "온도= " + snap.val() + "°C");
+     
+    </script>
+    <script>
+      function myF() {
+          //firebase에 쓰기
+          var dbRefObject = firebase.database().ref();
+          dbRefObject.child("FaceCheck/Power").set("ON");
+      }
+  </script>
+
+</body>
+
+</html>
