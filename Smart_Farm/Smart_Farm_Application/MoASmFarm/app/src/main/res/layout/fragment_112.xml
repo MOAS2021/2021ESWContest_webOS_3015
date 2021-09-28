@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/se2"
+    tools:context=".sub1fragment.Fragment112">
+
+
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="240dp"
+        android:src="@drawable/ccacleap"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="200dp"/>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/wwhite"
+        app:cardCornerRadius="70dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:id="@+id/yesbtn2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="씨앗으로 키울게요!"
+            android:fontFamily="@font/cookirun"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/wwhite"
+        app:cardCornerRadius="70dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:id="@+id/yesbtn2_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="모종으로 키울게요!"
+            android:fontFamily="@font/cookirun"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SubActivity4"
+    android:background="@drawable/streaming">
+
+
+    <WebView
+        android:id="@+id/WebView"
+        android:layout_width="355dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="29dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnback"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/section1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/section2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnHome"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:id="@+id/section3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/section4"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
