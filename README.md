@@ -43,3 +43,31 @@ contact : moas4408moas@gmail.com
 - 스마트 팜 앱 (Android)
 
 ![Smart_Farm](https://user-images.githubusercontent.com/90252929/135031617-cc4f5824-25ee-4004-b242-0bb51cbebd03.png)
+
+
+
+- 기구 모델링 (SolidWorks)
+
+- CCTV
+
+![cctv 랜더링](https://user-images.githubusercontent.com/90252929/135031963-5273de7b-af34-472b-a41d-dd17bc55abbd.JPG)
+
+
+- 스마트 냉장고
+
+![스마트냉장고 랜더링](https://user-images.githubusercontent.com/90252929/135031984-6041b5de-2d25-4764-a067-19ac3f6227ff.jpg)
+
+
+- 스마트 창문
+
+![스마트창문 랜더링](https://user-images.githubusercontent.com/90252929/135032005-7cba9c09-e3e3-4245-be87-c36e973c2f6f.JPG)
+
+
+- 스마트 팜
+
+![스마트팜 랜더링](https://user-images.githubusercontent.com/90252929/135032017-4674a518-b230-4037-bcc5-8277b1be9aed.JPG)
+
+
+- 스마트 에어컨
+ 
+![에어컨 랜더링](https://user-images.githubusercontent.com/90252929/135032034-8c43f805-777b-411d-b859-afb1fd006e5b.JPG)
