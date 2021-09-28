@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#404040"
+    android:backgroundTint="#404040"
+    android:foregroundTint="#FFFFFF"
+    tools:context=".SubActivity4">
+
+    <TextView
+        android:id="@+id/dateText0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="상품명/바코드를\n 입력해 주세요."
+        android:textColor="#EDACB1"
+        android:textIsSelectable="false"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/date0"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#FDF1F2"
+        android:hint="상품명/바코드를 입력해 주세요."
+        android:inputType="text"
+        android:shadowColor="#FFFFFF"
+        android:textColor="#FDF1F2"
+        android:textColorHint="#FDF1F2"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateText0" />
+
+    <TextView
+        android:id="@+id/dateText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="110dp"
+        android:text="유통기한 : "
+        android:textColor="#EDACB1"
+        android:textIsSelectable="false"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date0" />
+
+    <EditText
+        android:id="@+id/date1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:backgroundTint="#FDF1F2"
+        android:ems="10"
+        android:hint="ex)20000419"
+        android:inputType="number"
+        android:textColor="#FDF1F2"
+        android:textColorHint="#FDF1F2"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dateText1"
+        app:layout_constraintStart_toEndOf="@+id/dateText1"
+        app:layout_constraintTop_toTopOf="@+id/dateText1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/dateText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="개수 : "
+        android:textColor="#EDACB1"
+        android:textIsSelectable="false"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="@+id/dateText1"
+        app:layout_constraintStart_toStartOf="@+id/dateText1"
+        app:layout_constraintTop_toBottomOf="@+id/dateText1" />
+
+    <EditText
+        android:id="@+id/date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FDF1F2"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number"
+        android:textColor="#FDF1F2"
+        android:textColorHint="#FDF1F2"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dateText2"
+        app:layout_constraintEnd_toEndOf="@+id/date1"
+        app:layout_constraintStart_toStartOf="@+id/date1"
+        app:layout_constraintTop_toTopOf="@+id/dateText2" />
+
+    <Button
+        android:id="@+id/okayButton"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#EDACB1"
+        android:onClick="inputButton"
+        android:text="확인"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

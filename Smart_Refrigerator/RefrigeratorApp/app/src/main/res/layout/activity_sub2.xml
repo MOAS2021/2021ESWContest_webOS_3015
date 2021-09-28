@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#404040"
+    tools:context=".SubActivity2">
+
+    <TextView
+        android:id="@+id/expirationDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="n 개"
+        android:textColor="#EDACB1"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/expirationDateText2"
+        app:layout_constraintStart_toEndOf="@+id/expirationDateText2"
+        app:layout_constraintTop_toTopOf="@+id/expirationDateText2" />
+
+    <TextView
+        android:id="@+id/expirationDateText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="개수 :"
+        android:textColor="#EDACB1"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="@+id/expirationDateText1"
+        app:layout_constraintTop_toBottomOf="@+id/expirationDateText1" />
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/producText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Name"
+        android:textColor="#EDACB1"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="@+id/productImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productImage"
+        app:layout_constraintTop_toTopOf="@+id/productImage" />
+
+    <TextView
+        android:id="@+id/expirationDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="----------"
+        android:textColor="#EDACB1"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/expirationDateText1"
+        app:layout_constraintStart_toEndOf="@+id/expirationDateText1"
+        app:layout_constraintTop_toTopOf="@+id/expirationDateText1" />
+
+    <TextView
+        android:id="@+id/expirationDateText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="84dp"
+        android:text="유통기한 :"
+        android:textColor="#EDACB1"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

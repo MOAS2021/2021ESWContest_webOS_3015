@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RefrigeratorApp</string>
+    <string name="상품명">상품명</string>
+    <string name="개수">개수</string>
+</resources>

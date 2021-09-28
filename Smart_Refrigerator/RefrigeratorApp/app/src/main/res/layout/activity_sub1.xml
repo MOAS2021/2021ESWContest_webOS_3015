@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#404040"
+    tools:context=".SubActivity1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/상품명"
+        android:textColor="#EDACB1"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="85dp"
+        android:text="@string/개수"
+        android:textColor="#EDACB1"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backView0"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="136dp"
+        android:background="#FDF1F2"
+        android:contentDescription="TODO"
+        android:onClick="listZero"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionBarItemBackground" />
+
+    <ImageView
+        android:id="@+id/backView1"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#FDF1F2"
+        android:onClick="listOne"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backView0"
+        app:srcCompat="?attr/actionBarItemBackground" />
+
+    <ImageView
+        android:id="@+id/backView2"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#FDF1F2"
+        android:onClick="listTwo"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backView1"
+        app:srcCompat="?attr/actionBarItemBackground" />
+
+    <ImageView
+        android:id="@+id/backView3"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#FDF1F2"
+        android:onClick="listThree"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backView2"
+        app:srcCompat="?attr/actionBarItemBackground" />
+
+    <ImageView
+        android:id="@+id/backView4"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#FDF1F2"
+        android:onClick="listFour"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backView3"
+        app:srcCompat="?attr/actionBarItemBackground" />
+
+    <ImageView
+        android:id="@+id/backView5"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#FDF1F2"
+        android:onClick="listFive"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backView4"
+        app:srcCompat="?attr/actionBarItemBackground" />
+
+    <ImageView
+        android:id="@+id/backView6"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#FDF1F2"
+        android:onClick="listSix"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backView5"
+        app:srcCompat="?attr/actionBarItemBackground" />
+
+    <ImageView
+        android:id="@+id/productImage0"
+        android:layout_width="87dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backView0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backView0"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/productImage1"
+        android:layout_width="87dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backView1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backView1"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/productImage2"
+        android:layout_width="87dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backView2"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/productImage3"
+        android:layout_width="87dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backView3"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/productImage4"
+        android:layout_width="87dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backView4"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/productImage5"
+        android:layout_width="87dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backView5"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/productImage6"
+        android:layout_width="87dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backView6"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/productText0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="name"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productImage0"
+        app:layout_constraintStart_toEndOf="@+id/productImage0"
+        app:layout_constraintTop_toTopOf="@+id/productImage0" />
+
+    <TextView
+        android:id="@+id/productText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="name"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productImage1"
+        app:layout_constraintStart_toEndOf="@+id/productImage1"
+        app:layout_constraintTop_toTopOf="@+id/productImage1" />
+
+    <TextView
+        android:id="@+id/productText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="name"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productImage2"
+        app:layout_constraintStart_toEndOf="@+id/productImage2"
+        app:layout_constraintTop_toTopOf="@+id/productImage2" />
+
+    <TextView
+        android:id="@+id/productText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="name"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productImage3"
+        app:layout_constraintStart_toEndOf="@+id/productImage3"
+        app:layout_constraintTop_toTopOf="@+id/productImage3" />
+
+    <TextView
+        android:id="@+id/productText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="name"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productImage4"
+        app:layout_constraintStart_toEndOf="@+id/productImage4"
+        app:layout_constraintTop_toTopOf="@+id/productImage4" />
+
+    <TextView
+        android:id="@+id/productText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="name"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productImage5"
+        app:layout_constraintStart_toEndOf="@+id/productImage5"
+        app:layout_constraintTop_toTopOf="@+id/productImage5" />
+
+    <TextView
+        android:id="@+id/productText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="name"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productImage6"
+        app:layout_constraintStart_toEndOf="@+id/productImage6"
+        app:layout_constraintTop_toTopOf="@+id/productImage6" />
+
+    <TextView
+        android:id="@+id/productNum0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="n개"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backView0"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/backView0" />
+
+    <TextView
+        android:id="@+id/productNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="n개"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backView1"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/backView1" />
+
+    <TextView
+        android:id="@+id/productNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="n개"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/backView2" />
+
+    <TextView
+        android:id="@+id/productNum3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="n개"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backView3"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/backView3" />
+
+    <TextView
+        android:id="@+id/productNum4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="n개"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/backView4" />
+
+    <TextView
+        android:id="@+id/productNum5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="n개"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backView5"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/backView5" />
+
+    <TextView
+        android:id="@+id/productNum6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="n개"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/backView6"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/backView6" />
+
+    <ImageView
+        android:id="@+id/plusImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="plusButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/plusbutton" />
+
+    <TextView
+        android:id="@+id/plus0"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center|center_horizontal"
+        android:onClick="plusBotton0"
+        android:text="+"
+        android:textColor="#EDACB1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productNum0"
+        app:layout_constraintStart_toEndOf="@+id/productNum0" />
+
+    <TextView
+        android:id="@+id/plus1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center|center_horizontal"
+        android:onClick="plusBotton1"
+        android:text="+"
+        android:textColor="#EDACB1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productNum1"
+        app:layout_constraintStart_toEndOf="@+id/productNum1" />
+
+    <TextView
+        android:id="@+id/plus2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center|center_horizontal"
+        android:onClick="2"
+        android:text="+"
+        android:textColor="#EDACB1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productNum2"
+        app:layout_constraintStart_toEndOf="@+id/productNum2" />
+
+    <TextView
+        android:id="@+id/plus3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center|center_horizontal"
+        android:onClick="plusBotton3"
+        android:text="+"
+        android:textColor="#EDACB1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productNum3"
+        app:layout_constraintStart_toEndOf="@+id/productNum3" />
+
+    <TextView
+        android:id="@+id/plus4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center|center_horizontal"
+        android:onClick="plusBotton4"
+        android:text="+"
+        android:textColor="#EDACB1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productNum4"
+        app:layout_constraintStart_toEndOf="@+id/productNum4" />
+
+    <TextView
+        android:id="@+id/plus5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center|center_horizontal"
+        android:onClick="plusBotton5"
+        android:text="+"
+        android:textColor="#EDACB1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productNum5"
+        app:layout_constraintStart_toEndOf="@+id/productNum5" />
+
+    <TextView
+        android:id="@+id/plus6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center|center_horizontal"
+        android:onClick="plusBotton6"
+        android:text="+"
+        android:textColor="#EDACB1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productNum6"
+        app:layout_constraintStart_toEndOf="@+id/productNum6" />
+
+    <TextView
+        android:id="@+id/minus0"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="110dp"
+        android:gravity="center|center_horizontal"
+        android:onClick="minusBotton0"
+        android:text="-"
+        android:textColor="#EDACB1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productNum0"
+        app:layout_constraintEnd_toStartOf="@+id/plus0" />
+
+    <TextView
+        android:id="@+id/minus1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="110dp"
+        android:gravity="center|center_horizontal"
+        android:onClick="minusBotton1"
+        android:text="-"
+        android:textColor="#EDACB1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productNum1"
+        app:layout_constraintEnd_toStartOf="@+id/plus1" />
+
+    <TextView
+        android:id="@+id/minus2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="110dp"
+        android:gravity="center|center_horizontal"
+        android:onClick="minusBotton2"
+        android:text="-"
+        android:textColor="#EDACB1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productNum2"
+        app:layout_constraintEnd_toStartOf="@+id/plus2" />
+
+    <TextView
+        android:id="@+id/minus3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="110dp"
+        android:gravity="center|center_horizontal"
+        android:onClick="minusBotton3"
+        android:text="-"
+        android:textColor="#EDACB1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productNum3"
+        app:layout_constraintEnd_toStartOf="@+id/plus3" />
+
+    <TextView
+        android:id="@+id/minus4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="110dp"
+        android:gravity="center|center_horizontal"
+        android:onClick="minusBotton4"
+        android:text="-"
+        android:textColor="#EDACB1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productNum4"
+        app:layout_constraintEnd_toStartOf="@+id/plus4" />
+
+    <TextView
+        android:id="@+id/minus5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="110dp"
+        android:gravity="center|center_horizontal"
+        android:onClick="minusBotton5"
+        android:text="-"
+        android:textColor="#EDACB1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productNum5"
+        app:layout_constraintEnd_toStartOf="@+id/plus5" />
+
+    <TextView
+        android:id="@+id/minus6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="110dp"
+        android:gravity="center|center_horizontal"
+        android:onClick="minusBotton6"
+        android:text="-"
+        android:textColor="#EDACB1"
+        android:textColorLink="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/productNum6"
+        app:layout_constraintEnd_toStartOf="@+id/plus6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
