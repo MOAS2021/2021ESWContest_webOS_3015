@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    tools:context=".sub6fragment.Fragment616">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bookff">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="MoAS 백과사전"
+                android:textSize="45sp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/palnt6"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cgc" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="외국어 표기\n
+                \n분류\n
+                \n열량\n
+                \n종류(품종)\n
+                \n원산지\n\n\n
+                \n특징\n\n\n\n\n\n
+                \n효능\n\n\n\n\n\n
+                \n음식궁합\n\n\n\n\n
+                \n활용\n\n\n
+                \n손질법\n\n\n\n\n
+                \n보관법
+                \n"
+                    android:textSize="25sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Bok Choy (영어)\n
+                    \n채소 > 엽채류\n
+                    \n100g당 18kcal\n
+                    \n청경채, 적청경채\n
+                    \n중국\n
+                    \n특별한 맛(오미)가 있지는 않지만 부드러운 양배추와 시금치의 중간 맛 정도가 나며, 수분이 많아 아삭하게 씹히는 식감이 특징이다.\n
+                    \n비타민 C가 풍부하고 칼륨과 칼슘이 많아 혈압 감소에 도움을 주고, 열량은 낮고 식이섬유가 풍부해 체중관리에 효과적이다.
+                    \n\n청경채에 함유된 지용성 베타카로틴은 기름과 만나면 더욱 잘 흡수가 되기 때문에 기름에 볶거나 데칠 때 참기름 몇 방울을 떨어트리면 좋다.
+                    \n\n쌈 채소나 샐러드에 생으로 넣어 먹고, 볶음용 요리에 활용된다.
+                    \n\n시들거나 지저분한 부분은 정리해주고, 흐르는 물에 깨끗이 씻어서 이용한다.
+                    \n\n씻지 않은 상태에서 비닐 팩에 넣어 냉장 보관한다. 이때 비닐 팩에 구멍을 조금 뚫어주면 더 신선하게 보관할 수 있다.\n\n"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.cardview.widget.CardView>

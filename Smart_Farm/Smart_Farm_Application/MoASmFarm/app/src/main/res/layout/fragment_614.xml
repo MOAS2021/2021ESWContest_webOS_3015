@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    tools:context=".sub6fragment.Fragment614">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bookff">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="MoAS 백과사전"
+                android:textSize="45sp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/palnt4"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/buchu" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="외국어 표기\n
+                \n분류\n
+                \n열량\n
+                \n종류(품종)\n
+                \n원산지\n\n\n
+                \n특징\n\n\n\n
+                \n효능\n\n\n\n
+                \n음식궁합\n\n\n\n
+                \n활용\n\n\n
+                \n손질법\n\n\n
+                \n보관법
+                \n"
+                    android:textSize="25sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Chinese Chive (영어)\n
+                    \n채소 > 엽경채류\n
+                    \n100g당 22kcal (생것)\n
+                    \n대엽, 소엽\n
+                    \n동부 아시아\n
+                    \n부추는 약간의 매운맛과 신맛을 가지고 있으며, 부추의 유황 화합물에 의해 특유의 향이 나는 것이 특징이다.\n
+                    \n부추의 정유 성분인 알리신이 비타민B군의 흡수율을 높여 피로 회복의 효과를 가진다.
+                    \n\n된장의 소금 성분 과잉섭취를 막아주고 부족한 비타민A와 C를 보충해 준다.
+                    \n\n샐러드나 겉절이, 김치, 무침, 찌개, 전 등으로 활용된다.
+                    \n\n상처가 나지 않도록 주의하며 흐르는 물에 흔들며 씻는다.
+                    \n\n수분이 닿으면 빨리 상하므로 흙이 묻은 상태로 종이타월에 싸서 냉장고 신선실에 보관한다.\n\n"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    tools:context=".sub6fragment.Fragment612">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bookff">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="MoAS 백과사전"
+                android:textSize="45sp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/palnt2"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ccacleap" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="외국어 표기\n
+                \n분류\n
+                \n열량\n
+                \n원산지\n\n\n
+                \n특징\n\n\n\n
+                \n효능\n\n\n\n
+                \n음식궁합\n\n\n\n
+                \n활용\n\n\n\n
+                \n손질법\n\n\n\n\n
+                \n보관법
+                \n"
+                    android:textSize="25sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Perilla leaf(영어)\n
+                    \n채소 > 엽채류\n
+                    \n100g당 41kcal (생것)\n
+                    \n동부 아시아\n
+                    \n광지역성 작물로 전국에서 재배되며 장해의 영향을 잘 받지 않아 사시사철 맛볼 수 있다.\n
+                    \n시금치보다 2배 이상의 철분을 함유하고 있어, 빈혈 예방 및 성장 발달에 효과적이다.
+                    \n\n깻잎에는 칼슘 ,무기질, 비타민이 풍부해 소고기의 부족한 영양을 채워준다.
+                    \n\n쌈 채소, 나물, 장아찌, 튀김 등 다양한 방식으로 활용될 수 있다.
+                    \n\n한 장씩 꼼꼼히 씻어 잔털에 붙은 이물질을 제거한다. 녹차 우린 물에 깻잎을 담근 후 흐르는 물에 씻어 농약 잔류물을 제거한다.
+                    \n\n종이타월로 한번 감싼 후 랩으로 씌워 냉장 보관한다.\n\n"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>
