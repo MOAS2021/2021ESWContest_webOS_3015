@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.navigationkt">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SettingActivity6" />
+        <activity android:name=".SettingActivity5" />
+        <activity android:name=".SettingActivity4" />
+        <activity android:name=".SettingActivity3" />
+        <activity android:name=".SettingActivity2" />
+        <activity android:name=".SettingActivity1" />
+        <activity android:name=".GuideActivity" />
+        <activity android:name=".HomeThirdActivity" />
+        <activity android:name=".HomeSecondActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".HomeFirstActivity1" />
+        <activity android:name=".shopActivity6" />
+        <activity android:name=".shopActivity5" />
+        <activity android:name=".shopActivity4" />
+        <activity android:name=".shopActivity3" />
+        <activity android:name=".shopActivity2" />
+        <activity android:name=".shopActivity1" />
+        <activity android:name=".SubActivity7" />
+        <activity android:name=".SubActivity6" />
+        <activity android:name=".SubActivity5" />
+        <activity android:name=".SubActivity4" />
+        <activity android:name=".SubActivity3" />
+        <activity android:name=".SubActivity2" />
+        <activity android:name=".SubActivity" />
+        <activity android:name=".LoadingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8239990089448654~3685921650" />
+    </application>
+
+</manifest>

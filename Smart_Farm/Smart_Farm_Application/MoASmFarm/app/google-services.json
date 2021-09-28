@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "266885432481",
+    "firebase_url": "https://nodemcutest-756bb-default-rtdb.firebaseio.com",
+    "project_id": "nodemcutest-756bb",
+    "storage_bucket": "nodemcutest-756bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266885432481:android:58e043415a31059d065ce0",
+        "android_client_info": {
+          "package_name": "com.example.navigationkt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266885432481-2bc3ggv7gnatf4an8dp6oc83f0cndrbt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACKjZOKoOBtoXjPVaa6JDLNY5re4Cz8uo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266885432481-2bc3ggv7gnatf4an8dp6oc83f0cndrbt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266885432481:android:eedca3f5b9538ce3065ce0",
+        "android_client_info": {
+          "package_name": "dongyang.jeff.refrigeratorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266885432481-esou8fuhedqt6rvd73u9ovc5h48uqcmi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dongyang.jeff.refrigeratorapp",
+            "certificate_hash": "fa8955f83b74c87728a990db000ad55438814c1b"
+          }
+        },
+        {
+          "client_id": "266885432481-2bc3ggv7gnatf4an8dp6oc83f0cndrbt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACKjZOKoOBtoXjPVaa6JDLNY5re4Cz8uo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266885432481-2bc3ggv7gnatf4an8dp6oc83f0cndrbt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
