@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_sub6"
+    app:startDestination="@id/fragment601">
+
+    <fragment
+        android:id="@+id/fragment601"
+        android:name="com.example.navigationkt.sub6fragment.Fragment601"
+        android:label="fragment_601"
+        tools:layout="@layout/fragment_601"  >
+        <action
+            android:id="@+id/action_fragment601_to_fragment611"
+            app:destination="@id/fragment611" />
+        <action
+            android:id="@+id/action_fragment601_to_fragment612"
+            app:destination="@id/fragment612" />
+        <action
+            android:id="@+id/action_fragment601_to_fragment613"
+            app:destination="@id/fragment613" />
+        <action
+            android:id="@+id/action_fragment601_to_fragment614"
+            app:destination="@id/fragment614" />
+        <action
+            android:id="@+id/action_fragment601_to_fragment615"
+            app:destination="@id/fragment615" />
+        <action
+            android:id="@+id/action_fragment601_to_fragment616"
+            app:destination="@id/fragment616" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment611"
+        android:name="com.example.navigationkt.sub6fragment.Fragment611"
+        android:label="fragment_611"
+        tools:layout="@layout/fragment_611" />
+    <fragment
+        android:id="@+id/fragment612"
+        android:name="com.example.navigationkt.sub6fragment.Fragment612"
+        android:label="fragment_612"
+        tools:layout="@layout/fragment_612" />
+    <fragment
+        android:id="@+id/fragment613"
+        android:name="com.example.navigationkt.sub6fragment.Fragment613"
+        android:label="fragment_613"
+        tools:layout="@layout/fragment_613" />
+    <fragment
+        android:id="@+id/fragment614"
+        android:name="com.example.navigationkt.sub6fragment.Fragment614"
+        android:label="fragment_614"
+        tools:layout="@layout/fragment_614" />
+    <fragment
+        android:id="@+id/fragment615"
+        android:name="com.example.navigationkt.sub6fragment.Fragment615"
+        android:label="fragment_615"
+        tools:layout="@layout/fragment_615" />
+    <fragment
+        android:id="@+id/fragment616"
+        android:name="com.example.navigationkt.sub6fragment.Fragment616"
+        android:label="fragment_616"
+        tools:layout="@layout/fragment_616" />
+
+
+</navigation>

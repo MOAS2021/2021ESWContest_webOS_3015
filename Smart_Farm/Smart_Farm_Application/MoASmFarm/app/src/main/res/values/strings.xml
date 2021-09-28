@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">MoASFarm</string>
+
+    <string name="MoASFarm">MoASFarm</string>
+    <string name="Main_menu1">식물</string>
+    <string name="Main_menu2">카메라</string>
+    <string name="Main_menu3">정보</string>
+    <string name="menu1">식물 선택</string>
+    <string name="menu2">식물 현황</string>
+    <string name="menu3">랜덤 식물 뽑기</string>
+    <string name="menu4">실시간 스트리밍</string>
+    <string name="menu5">카메라</string>
+    <string name="menu6">식물 백과사전</string>
+    <string name="menu7">씨앗 상점</string>
+
+    <string name="palnt1">상추</string>
+    <string name="palnt2">깻잎</string>
+    <string name="palnt3">바질</string>
+    <string name="palnt4">부추</string>
+    <string name="palnt5">시금치</string>
+    <string name="palnt6">청경채</string>
+
+
+    <string name="text101.1">식물 선택</string>
+    <string name="text101.2">식물 선택</string>
+    <string name="text101.4">104플래그먼트</string>
+
+    <string name="btn1">버튼1</string>
+    <string name="btn2">버튼2</string>
+    <string name="btn3">버튼3</string>
+    <string name="btn4">버튼4</string>
+
+    <string name="hmenu1">나의식물</string>
+    <string name="hmenu2">ㅋㅁㄹ</string>
+    <string name="hmenu3">식물정보</string>
+    <string name="hmenu4">식물게임</string>
+
+    <string name="moi">습도</string>
+    <string name="tem">온도</string>
+    <string name="mois">토양수분도</string>
+    <string name="sun">조도</string>
+
+    <string name="left" color="black">정보</string>
+    <string name="center">홈</string>
+    <string name="right">설정</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="setting1">Hello blank fragment</string>
+    <string name="setting2">Hello blank fragment</string>
+    <string name="setting3">Hello blank fragment</string>
+    <string name="setting4">    센서 정보</string>
+    <string name="setting5">Hello blank fragment</string>
+
+    <string name="book1">외국어 표기\n
+                \n분류\n
+                \n열량\n
+                \n원산지\n\n\n
+                \n특징\n\n\n\n\n
+                \n종류(품종)\n\n\n\n\n\n\n\n
+                \n효능\n\n\n\n\n\n\n
+
+                \n음식궁합\n\n\n
+                \n활용\n\n\n\n\n
+                \n손질법\n\n\n\n\n\n\n\n
+                \n보관법
+                \n</string>
+    <string name="book2">조도</string>
+    <string name="book3">조도</string>
+    <string name="book4">조도</string>
+    <string name="book5">조도</string>
+    <string name="book6">조도</string>
+    <string name="book11">조도</string>
+    <string name="book21">조도</string>
+    <string name="book31">조도</string>
+    <string name="book41">조도</string>
+    <string name="book51">조도</string>
+    <string name="book61">조도</string>
+
+</resources>

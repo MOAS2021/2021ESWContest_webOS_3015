@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_control"
+    app:startDestination="@id/confragment101">
+
+    <fragment
+        android:id="@+id/confragment101"
+        android:name="com.example.navigationkt.Controlfragment.confragment101"
+        android:label="fragment_confragment101"
+        tools:layout="@layout/fragment_confragment101" >
+        <action
+            android:id="@+id/action_confragment101_to_confragment201"
+            app:destination="@id/confragment201" />
+        <action
+            android:id="@+id/action_confragment101_to_confragment202"
+            app:destination="@id/confragment202" />
+        <action
+            android:id="@+id/action_confragment101_to_confragment203"
+            app:destination="@id/confragment203" />
+    </fragment>
+    <fragment
+        android:id="@+id/confragment201"
+        android:name="com.example.navigationkt.Controlfragment.confragment201"
+        android:label="fragment_confragment201"
+        tools:layout="@layout/fragment_confragment201" />
+    <fragment
+        android:id="@+id/confragment202"
+        android:name="com.example.navigationkt.Controlfragment.confragment202"
+        android:label="fragment_confragment202"
+        tools:layout="@layout/fragment_confragment202" />
+    <fragment
+        android:id="@+id/confragment203"
+        android:name="com.example.navigationkt.Controlfragment.confragment203"
+        android:label="fragment_confragment203"
+        tools:layout="@layout/fragment_confragment203" />
+</navigation>

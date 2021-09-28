@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/guide"
+    app:startDestination="@id/guidehomefragment">
+
+    <fragment
+        android:id="@+id/guidehomefragment"
+        android:name="com.example.navigationkt.guidefragment.guidehomefragment"
+        android:label="fragment_guidehomefragment"
+        tools:layout="@layout/fragment_guidehomefragment" >
+        <action
+            android:id="@+id/action_guidehomefragment_to_guidefragment1"
+            app:destination="@id/guidefragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/guidefragment1"
+        android:name="com.example.navigationkt.guidefragment.guidefragment1"
+        android:label="fragment_guidefragment1"
+        tools:layout="@layout/fragment_guidefragment1" >
+        <action
+            android:id="@+id/action_guidefragment1_to_guidefragment2"
+            app:destination="@id/guidefragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/guidefragment2"
+        android:name="com.example.navigationkt.guidefragment.guidefragment2"
+        android:label="fragment_guidefragment2"
+        tools:layout="@layout/fragment_guidefragment2" >
+        <action
+            android:id="@+id/action_guidefragment2_to_guidefragment3"
+            app:destination="@id/guidefragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/guidefragment3"
+        android:name="com.example.navigationkt.guidefragment.guidefragment3"
+        android:label="fragment_guidefragment3"
+        tools:layout="@layout/fragment_guidefragment3" >
+        <action
+            android:id="@+id/action_guidefragment3_to_guidefragment4"
+            app:destination="@id/guidefragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/guidefragment4"
+        android:name="com.example.navigationkt.guidefragment.guidefragment4"
+        android:label="fragment_guidefragment4"
+        tools:layout="@layout/fragment_guidefragment4" />
+</navigation>

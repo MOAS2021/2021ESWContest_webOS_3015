@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_shop1"
+    app:startDestination="@id/fragment711">
+
+    <fragment
+        android:id="@+id/fragment711"
+        android:name="com.example.navigationkt.sub7fragment.Fragment711"
+        android:label="fragment_711"
+        tools:layout="@layout/fragment_711" >
+        <action
+            android:id="@+id/action_fragment711_to_shopFragment101"
+            app:destination="@id/shopFragment101" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopFragment101"
+        android:name="com.example.navigationkt.shop1fragment.shopFragment101"
+        android:label="fragment_shop101"
+        tools:layout="@layout/fragment_shop101" />
+</navigation>

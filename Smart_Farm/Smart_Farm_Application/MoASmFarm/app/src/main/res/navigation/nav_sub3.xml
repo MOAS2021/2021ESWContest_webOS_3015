@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_sub3"
+    app:startDestination="@id/fragment301">
+
+    <fragment
+        android:id="@+id/fragment301"
+        android:name="com.example.navigationkt.sub3fragment.Fragment301"
+        android:label="fragment_301"
+        tools:layout="@layout/fragment_301" >
+        <action
+            android:id="@+id/action_fragment301_to_fragment310"
+            app:destination="@id/fragment310" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment310"
+        android:name="com.example.navigationkt.sub3fragment.Fragment310"
+        android:label="fragment_310"
+        tools:layout="@layout/fragment_310" >
+        <action
+            android:id="@+id/action_fragment310_to_fragment311"
+            app:destination="@id/fragment311" />
+        <action
+            android:id="@+id/action_fragment310_to_fragment312"
+            app:destination="@id/fragment312" />
+        <action
+            android:id="@+id/action_fragment310_to_fragment313"
+            app:destination="@id/fragment313" />
+        <action
+            android:id="@+id/action_fragment310_to_fragment314"
+            app:destination="@id/fragment314" />
+        <action
+            android:id="@+id/action_fragment310_to_fragment315"
+            app:destination="@id/fragment315" />
+        <action
+            android:id="@+id/action_fragment310_to_fragment316"
+            app:destination="@id/fragment316" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment311"
+        android:name="com.example.navigationkt.sub3fragment.Fragment311"
+        android:label="fragment_311"
+        tools:layout="@layout/fragment_311" />
+    <fragment
+        android:id="@+id/fragment312"
+        android:name="com.example.navigationkt.sub3fragment.Fragment312"
+        android:label="fragment_312"
+        tools:layout="@layout/fragment_312" />
+    <fragment
+        android:id="@+id/fragment313"
+        android:name="com.example.navigationkt.sub3fragment.Fragment313"
+        android:label="fragment_313"
+        tools:layout="@layout/fragment_313" />
+    <fragment
+        android:id="@+id/fragment314"
+        android:name="com.example.navigationkt.sub3fragment.Fragment314"
+        android:label="fragment_314"
+        tools:layout="@layout/fragment_314" />
+    <fragment
+        android:id="@+id/fragment315"
+        android:name="com.example.navigationkt.sub3fragment.Fragment315"
+        android:label="fragment_315"
+        tools:layout="@layout/fragment_315" />
+    <fragment
+        android:id="@+id/fragment316"
+        android:name="com.example.navigationkt.sub3fragment.Fragment316"
+        android:label="fragment_316"
+        tools:layout="@layout/fragment_316" />
+</navigation>
