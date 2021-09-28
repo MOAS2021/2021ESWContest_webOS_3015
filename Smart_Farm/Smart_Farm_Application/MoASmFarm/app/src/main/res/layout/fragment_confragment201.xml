@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/confrag1"
+    tools:context=".Controlfragment.confragment201">
+
+    <ImageView
+        android:id="@+id/r3b1led"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/r3b1led"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/randomled"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/randomled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/whiteled"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/whiteled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r3b1led" />
+
+    <ImageView
+        android:id="@+id/ledoff"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ledoff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/randomled" />
+
+    <TextView
+        android:id="@+id/ledtext"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:background="@color/sky"
+        android:text="LED Controller"
+        android:textColor="@color/hangle"
+        android:fontFamily="@font/hsugi"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

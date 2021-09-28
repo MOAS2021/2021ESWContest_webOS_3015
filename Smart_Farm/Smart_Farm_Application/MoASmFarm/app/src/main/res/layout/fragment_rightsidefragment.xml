@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Homefragment.Rightsidefragment">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view4"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="farmer.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/setting1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="    공지사항"
+        android:background="@color/white"
+        android:textSize="30sp"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/setting2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="    앱 정보"
+        android:background="@color/white"
+        android:textSize="30sp"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/setting3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="    이용 약관"
+        android:background="@color/white"
+        android:textSize="30sp"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/setting4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="    센서 정보"
+        android:background="@color/white"
+        android:textSize="30sp"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/setting5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="    앱 가이드"
+        android:background="@color/white"
+        android:textSize="30sp"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/setting6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="    고객센터"
+        android:background="@color/white"
+        android:textSize="30sp"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"/>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

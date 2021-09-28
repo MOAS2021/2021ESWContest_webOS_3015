@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:title="@string/Main_menu1">
+
+
+            <menu>
+
+                <item
+                    android:id="@+id/menu1"
+                    android:title="@string/menu1"
+                    android:icon="@drawable/ic_baseline_leaf"/>
+                <item
+                    android:id="@+id/menu2"
+                    android:title="@string/menu2"
+                    android:icon="@drawable/ic_data"/>
+
+                <item
+                    android:id="@+id/menu3"
+                    android:title="@string/menu3"
+                    android:icon="@drawable/ic_random"/>
+
+            </menu>
+        </item>
+
+        <item
+            android:title="@string/Main_menu2">
+
+            <menu>
+
+                <item
+                    android:id="@+id/menu4"
+                    android:title="@string/menu4"
+                    android:icon="@android:drawable/ic_menu_camera"/>
+                <item
+                    android:id="@+id/menu5"
+                    android:title="@string/menu5"
+                    android:icon="@android:drawable/ic_menu_camera"/>
+
+
+            </menu>
+        </item>
+
+        <item
+            android:title="@string/Main_menu3"
+            >
+
+            <menu>
+
+                <item
+                    android:id="@+id/menu6"
+                    android:icon="@drawable/ic_baseline_menu_book_24"
+                    android:title="@string/menu6" />
+                <item
+                    android:id="@+id/menu7"
+                    android:icon="@drawable/ic_baseline_laptop"
+                    android:title="@string/menu7" />
+
+
+            </menu>
+        </item>
+    </group>
+
+</menu>

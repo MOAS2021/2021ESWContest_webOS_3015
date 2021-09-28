@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homebutton"
+        android:title="@string/center"
+        android:icon="@drawable/ic_home"
+
+    />
+
+    <item
+        android:id="@+id/leftbutton"
+        android:title="@string/left"
+        android:icon="@drawable/ic_baseline_search_24"
+
+        />
+    <item
+        android:id="@+id/rightbutton"
+        android:title="@string/right"
+        android:icon="@drawable/ic_baseline_settings_24"
+
+        />
+
+</menu>
